@@ -1,4 +1,4 @@
-const medallas_url = "https://danikho2020.github.io/json/medallas.json";
+const escuela_url = "https://aymaramelo.github.io/json/listado.json";
 
 function cargarDatos(url) {
     document.getElementById("data").innerHTML = "";
@@ -30,3 +30,5 @@ function cargarDatos(url) {
         })
         .catch(error => alert("Hubo un error: " + error));
 }
+
+cargarDatos(escuela_url);
