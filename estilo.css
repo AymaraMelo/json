@@ -1,0 +1,25 @@
+* {
+    font-family: Cambria, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(240, 220, 133);
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+
+td, th{
+    border: 1px  solid;
+    width: 100px;
+    text-align: center;
+}
+
+.center{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
