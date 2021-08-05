@@ -19,6 +19,11 @@ td, th{
     text-align: center;
 }
 
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
 .center{
     margin-left: 50%;
     transform: translateX(-50%);

@@ -17,6 +17,9 @@ function cargarDatos(url) {
                 return aux;
             }
 
+            let titulo = document.getElementById("titulo");
+            titulo.innerHTML += datos.LaEscuelaJap;
+
             for (let i = 0; i < datos.materias.length; i++) {
                 cargar += `
             <tr> 
