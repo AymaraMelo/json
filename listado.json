@@ -1,0 +1,39 @@
+{
+    "LaEscuelaJap": "Escuela de Jap",
+    "Ciudad": "Montevideo",
+    "Fundada": 2021,
+    "Ubicacion": "Online",
+    "active": true,
+    "materias": [
+      {
+        "Nombre": "Matematica",
+        "Duracion": 2,
+        "Profesor": "Dan Jukes",
+        "Tematicas": [
+          "Matrices",
+          "Funciones",
+          "Iteraciones"
+        ]
+      },
+      {
+        "Nombre": "Fisica",
+        "Duracion": 1,
+        "Profesor": "Jane Wilson",
+        "Tematicas": [
+          "Cuantica",
+          "Agujeros Negros",
+          "Mecanica de un sistema de particulas"
+        ]
+      },
+      {
+        "Nombre": "Programming",
+        "Duracion": 2,
+        "Profesor": "Unknown",
+        "Tematicas": [
+          "HTML",
+          "JavaScript",
+          "Css"
+        ]
+      }
+    ]
+  }
