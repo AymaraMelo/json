@@ -4,31 +4,32 @@ function cargarDatos(url) {
     document.getElementById("data").innerHTML = "";
     fetch(url)
         .then(respuesta => respuesta.json())
-        
-        .then(datos => {
-        let tabla = document.getElementById("data");
-        let cargar = "";
-        
-        function ponerTematica(lista){
-            let aux = [];
-            for(let i=0; i<lista.length; i++){
-                aux[i] = lista[i];
-            }
-        }
 
-        for(let i=0; i<datos.length ; i++) {
-            cargar += `
+        .then(datos => {
+            let tabla = document.getElementById("data");
+            let cargar = "";
+
+            function ponerTematica(lista) {
+                let aux = "";
+                for (let i = 0; i < lista.length; i++) {
+                    aux += lista[i] + " ";
+                }
+                return aux;
+            }
+
+            for (let i = 0; i < datos.materias.length; i++) {
+                cargar += `
             <tr> 
-                <td>` + datos[0].materias[i].Nombre + `</td>
-                <td>` + datos[0].materias[i].Duracion + ` </td>
-                <td>` + datos[0].materias[i].Profesor + ` </td>
-                <td>` + ponerTematica(datos[0].materias[i].Tematicas) + `</td>
+                <td>` + datos.materias[i].Nombre + `</td>
+                <td>` + datos.materias[i].Duracion + ` </td>
+                <td>` + datos.materias[i].Profesor + ` </td>
+                <td>` + ponerTematica(datos.materias[i].Tematicas) + `</td>
             </tr>`;
 
-        }
-        tabla.innerHTML = cargar;
+            }
+            tabla.innerHTML = cargar;
         })
-        .catch(error => alert("Hubo un error: " + error));
+    .catch(error => alert("Hubo un error: " + error));
 }
 
 cargarDatos(escuela_url);
